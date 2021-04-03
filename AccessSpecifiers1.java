@@ -1,3 +1,4 @@
+// Class is having default access modifier 
 class DefAccessSpecifier
 { 
   void display() 
@@ -5,7 +6,7 @@ class DefAccessSpecifier
          System.out.println("You are using defalut access specifier"); 
      } 
 } 
-
+// Driver class
 public class AccessSpecifiers1 {
 
 	public static void main(String[] args) {
