@@ -1,6 +1,6 @@
 public class TypeCasting {
 
-	public static void main (String [] args) {
+	public static void main (String[] args) {
 		
 		//implicit type conversion (type promotion)
 		System.out.println("Implicit Type Conversion: -");
