@@ -63,6 +63,7 @@ public class TestLocalInner {
                 System.out.println(data);
             }
         }
+
         Local l = new Local();
         l.msg();
     }
