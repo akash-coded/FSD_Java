@@ -27,3 +27,9 @@ public class JavaExceptionTypes {
         }
     }
 }
+
+// At a time only one exception occurs and at a time only one catch block is
+// executed.
+
+// All catch blocks must be ordered from most specific to most general, i.e.
+// catch for ArithmeticException must come before catch for Exception.
