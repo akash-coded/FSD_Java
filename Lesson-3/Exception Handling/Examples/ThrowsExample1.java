@@ -3,6 +3,12 @@ import java.io.*;
 class M {
     void method() throws IOException {
         throw new IOException("device error");
+
+        // try {
+        // throw new IOException("device error");
+        // } catch (IOException ex) {
+        // System.out.println("Caught inside M class" + ex);
+        // }
     }
 }
 
@@ -15,7 +21,7 @@ public class ThrowsExample1 {
             M m = new M();
             m.method();
         } catch (Exception e) {
-            System.out.println("exception handled");
+            System.out.println("exception handled inisde main method");
         }
 
         System.out.println("normal flow...");

@@ -12,7 +12,7 @@ class MyException extends Exception {
 public class CustomExceptionDemo {
     public static void main(String args[]) {
         try {
-            throw new MyException("temp");
+            throw new MyException("I am a custom exception");
         } catch (MyException ex) {
             System.out.println("Caught");
             System.out.println(ex.getMessage());

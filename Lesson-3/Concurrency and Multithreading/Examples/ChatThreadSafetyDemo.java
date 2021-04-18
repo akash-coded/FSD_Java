@@ -1,7 +1,7 @@
 class Chat {
     boolean flag = false;
 
-    public synchronized void sendText(String msg) {
+    public synchronized void sendText(String msg) { // Person-1
         if (flag) {
             try {
                 wait();
@@ -17,7 +17,7 @@ class Chat {
         // ? Why does using notify() over here lead to a warning?
     }
 
-    public synchronized void sendReply(String msg) {
+    public synchronized void sendReply(String msg) { // Person-2
         while (!flag) {
             try {
                 // * ANSWER

@@ -13,6 +13,7 @@ public class ExceptionPropagation {
         } catch (Exception e) {
             System.out.println("exception handled");
         }
+        // n();
     }
 
     public static void main(String[] args) {

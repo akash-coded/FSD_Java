@@ -15,6 +15,8 @@ public class NestedTryBlock {
                 System.out.println(e);
             }
 
+            // System.out.println(25 / 0);
+
             System.out.println("other statement");
         } catch (Exception e) {
             System.out.println("handeled");

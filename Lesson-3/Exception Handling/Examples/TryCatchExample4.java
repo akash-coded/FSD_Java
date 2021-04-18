@@ -11,7 +11,7 @@ public class TryCatchExample4 {
         // handling the exception by using Exception class
         catch (Exception e) {
             System.out.println("Can't divided by zero");
-            System.out.println(e);
+            e.printStackTrace();
         }
         System.out.println("rest of the code");
     }

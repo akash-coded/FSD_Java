@@ -10,9 +10,9 @@ public class TryCatchExample5 {
         }
         // handling the exception
         catch (Exception e) {
+            System.out.println("Inside catch block:");
             // generating the exception in catch block
             int data2 = 50 / 0; // may throw exception
-
         }
         System.out.println("rest of the code");
     }

@@ -24,6 +24,8 @@ public class JavaExceptionTypes {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Uh-oh! ArrayIndexOutOfBoundsException has occurred🎃");
             System.out.println(e);
+        } catch (Exception e) {
+            System.out.println("Uh-oh! Exception has occurred🎃");
         }
     }
 }

@@ -6,7 +6,7 @@ public class ThrowDemo {
         int rs;
 
         try {
-            if (b == 0) // ? Can this condition be rewritten differently?
+            if (0 == b) // ? Can this condition be rewritten differently?
                 throw (new ArithmeticException("Can't divide by zero."));
             else {
                 rs = a / b;
