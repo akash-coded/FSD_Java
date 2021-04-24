@@ -24,6 +24,14 @@ public class JavaExceptionTypes {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Uh-oh! ArrayIndexOutOfBoundsException has occurred🎃");
             System.out.println(e);
+        } catch (Exception e) {
+            System.out.println("Uh-oh! Exception has occurred🎃");
         }
     }
 }
+
+// At a time only one exception occurs and at a time only one catch block is
+// executed.
+
+// All catch blocks must be ordered from most specific to most general, i.e.
+// catch for ArithmeticException must come before catch for Exception.
