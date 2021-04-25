@@ -1,5 +1,12 @@
 {
     "java.project.sourcePaths": [
+        "Lesson-5/Selection Sort/Assisted Practice Problem",
+        "Lesson-5/Linear Search/Assisted Practice Problem",
+        "Lesson-5/Insertion Sort/Assisted Practice Problem",
+        "Lesson-5/Exponential Search/Assisted Practice Problem",
+        "Lesson-5/Bubble Sort/Assisted Practice Problem",
+        "Lesson-5/Binary Search/Assisted Practice Problem",
+        "Lesson-4/Stack/Examples",
         "Lesson-4/Stack/Assisted Practice Problem",
         "Lesson-4/Singly Linked List/Assisted Practice Problems",
         "Lesson-4/Queue/Assisted Practice Problem",
@@ -8,6 +15,6 @@
         "Lesson-3/File Handling/Examples",
         "Lesson-3/Exception Handling/Examples",
         "Lesson-3/Exception Handling/Assisted Practice Problems",
-        "Lesson-4/Stack/Examples"
+        "Lesson-5/Quick Sort/Assisted Practice Problem"
     ]
 }
