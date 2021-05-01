@@ -11,6 +11,7 @@ public class DoublyLinkedList {
         }
     }
 
+    // Insertion at the beginning
     public void push(int newData) {
         Node newNode = new Node(newData);
         newNode.next = head;
@@ -33,6 +34,7 @@ public class DoublyLinkedList {
             newNode.next.prev = newNode;
     }
 
+    // Insertion at the end
     void append(int newData) {
         Node newNode = new Node(newData);
         Node last = head;
