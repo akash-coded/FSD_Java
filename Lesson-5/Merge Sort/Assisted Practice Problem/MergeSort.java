@@ -1,60 +1,60 @@
 /* Java program for Merge Sort */
 class MergeSort {
-    void merge(int[] arr, int l, int m, int r) {
-        int n1 = m - l + 1;
-        int n2 = r - m;
+    void merge(int[] arr, int low, int mid, int high) {
+        int n1 = mid - low + 1;
+        int n2 = high - mid;
 
         /* Create temp arrays */
-        int[] L = new int[n1];
-        int[] R = new int[n2];
+        int[] left = new int[n1];
+        int[] right = new int[n2];
 
         /* Copy data to temp arrays */
         for (int i = 0; i < n1; ++i)
-            L[i] = arr[l + i];
+            left[i] = arr[low + i];
 
         for (int j = 0; j < n2; ++j)
-            R[j] = arr[m + 1 + j];
+            right[j] = arr[mid + 1 + j];
 
         int i = 0;
         int j = 0;
-        int k = l;
+        int k = low;
 
         while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) {
-                arr[k] = L[i];
+            if (left[i] <= right[j]) {
+                arr[k] = left[i];
                 i++;
             } else {
-                arr[k] = R[j];
+                arr[k] = right[j];
                 j++;
             }
             k++;
         }
 
         while (i < n1) {
-            arr[k] = L[i];
+            arr[k] = left[i];
             i++;
             k++;
         }
 
         while (j < n2) {
-            arr[k] = R[j];
+            arr[k] = right[j];
             j++;
             k++;
         }
     }
 
-    void sort(int arr[], int l, int r) {
-        if (l < r) {
-            int m = (l + r) / 2;
+    void sort(int[] arr, int low, int high) {
+        if (low < high) {
+            int mid = (low + high) / 2;
 
-            sort(arr, l, m);
-            sort(arr, m + 1, r);
+            sort(arr, low, mid);
+            sort(arr, mid + 1, high);
 
-            merge(arr, l, m, r);
+            merge(arr, low, mid, high);
         }
     }
 
-    static void printArray(int arr[]) {
+    static void printArray(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
@@ -62,7 +62,7 @@ class MergeSort {
     }
 
     // Driver method
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int[] arr = { 12, 11, 13, 5, 6, 7 };
 
         System.out.println("Given Array");
