@@ -15,6 +15,7 @@ public class PrintDigits {
                 int digit = num % 10;
                 num /= 10;
                 System.out.println(digit + " - " + printEvenOrOdd(digit));
+                System.out.println("New line of code");
             }
         }
     }
